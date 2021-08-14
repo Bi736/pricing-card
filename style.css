@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    text-align: center;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 40px;
+}
+
+.toggle-btn{
+    margin: 0px 15px;
+    height: 25px;
+    width: 60px;
+    background-color: mediumorchid;
+    margin: 0px 30px;
+    display: inline-block;
+    border-radius: 20px;
+   
+}
+
+
+.circle{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#round{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 2px 2px;
+}
+#icon{
+    margin-top: 2px;
+}
+
+
+.all-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.shadow{
+    margin: 0px 60px;
+
+    background-color: rgb(228, 224, 224);
+    border: 1px solid black;
+    padding: 50px 40px;
+    border-radius: 20px;
+}
+.active{
+background-color: blueviolet;
+padding: 50px 40px;
+color: white;
+border: 1px solid black;
+transform: scale(1.2);
+border-radius: 20px;
+}
+
+ul{
+
+}
+ul li{
+    list-style: none;
+    margin: 20px 0px;
+}
+ul  a{
+    padding: 10px 40px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+#middle{
+    padding: 10px 40px;
+    background-color: white;
+    border-radius: 20px;
+    color:black;
+    text-decoration: none;
+}
+
+.left-next,.middle-next,.right-next{
+    display: none;
+}
+
+#check1:checked ~ .container .all-post .card{
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s;
+}
+
+
+
+#check2:checked ~ .container .all-post .middle,
+#check2:checked ~ .container .all-post .left,
+#check2:checked ~ .container .all-post .right{
+    opacity: 0;
+    transform: scale(0);
+    display: none;
+}
+
+
+
+#check2:checked ~ .container .all-post .middle-next,
+#check2:checked ~ .container .all-post .left-next,
+#check2:checked ~ .container .all-post .right-next{
+    display: block;
+}
+
+input{
+    display: none;
+}
+
