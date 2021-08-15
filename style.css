@@ -6,6 +6,9 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+
+    ackground-color:rgba(237, 250, 250,.5) ;
+
 }
 
 
@@ -17,14 +20,14 @@ body{
     display: flex;
     justify-content: center;
 
-    margin-top: 40px;
+    margin-top: 150px;
 }
 
 .toggle-btn{
     margin: 0px 15px;
     height: 25px;
     width: 60px;
-    background-color: mediumorchid;
+    background-color: rgb(222, 151, 240);
     margin: 0px 30px;
     display: inline-block;
     border-radius: 20px;
@@ -48,49 +51,40 @@ body{
     margin-top: 2px;
 }
 
-
 .all-post{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 .shadow{
-    margin: 50px 40px;
-
-    background-color: rgb(228, 224, 224);
+    
+    background: linear-gradient( to top, rgba(242, 242, 242,.9), rgba(140, 140, 140,.1));
     border: 1px solid black;
-    padding: 50px 40px;
+   height: 365px;
+   width: 245px;
     border-radius: 20px;
 }
 .active{
-background-color: blueviolet;
-padding: 50px 40px;
+background: linear-gradient(to bottom,rgba(255, 0, 0,.8),rgba(0, 0, 102,.9) );
+
 color: white;
 border: 1px solid black;
-transform: scale(1.2);
 border-radius: 20px;
+height: 430px;
+width: 304px;
+
 }
 
 ul{
 
 }
-ul li{
-    list-style: none;
-    margin: 20px 0px;
-}
+
 ul  a{
     padding: 10px 40px;
     background-color: blueviolet;
     border-radius: 20px;
     color: white;
-    text-decoration: none;
-}
-#middle{
-    padding: 10px 40px;
-    background-color: white;
-    border-radius: 20px;
-    color:black;
     text-decoration: none;
 }
 
@@ -126,3 +120,110 @@ input{
     display: none;
 }
 
+
+.layer{
+  
+   
+}
+.layer i{
+   font-size: 80px;
+   color: black;
+   opacity: .04;
+  
+}
+
+
+
+ul li {
+    list-style: none;
+    margin: 20px 40px;
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+    margin: 0px 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+#middle {
+    padding: 7px 35px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    margin-right: 80px;
+}
+
+.active ul li {
+    list-style: none;
+    margin: 25px 40px;
+    text-align: left;
+color: lightgray;
+}
+
+.active ul li i.far.fa-check-square {
+    margin: 0px 6px;
+    color:rgb(255, 255, 204) ;
+}
+
+.shadow h2{
+    color: black;
+}
+.laye i{
+    font-size: 60px;
+    color: black;
+    opacity: .04;
+
+}
+
+.shadow{
+
+}
+
+.shadow ul li i.far.fa-check-square{
+    margin: 0px 6px;
+    color:green ;
+}
+
+#a{
+   font-weight: 500;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.shadow ul  a {
+    padding: 7px 30px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+label{
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.all-post{
+   
+    box-shadow: 20px 20px 30px transparent;
+    padding: 40px 0px;
+}
+
+
+.wave{
+    height: 20px;
+}
+.wave svg{
+    
+   background-size: cover;
+   
+   
+}
